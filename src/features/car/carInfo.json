@@ -56,8 +56,18 @@
     "rightBtnTxt": "Existing Inventory",
     "leftBtnTxt": "Custom Order "
   },
+
   {
     "id": 5,
+    "title": "Solar Panel",
+    "description": "Order Online for Touchless Delivery",
+    "image": "solar-panel.jpg",
+    "range": "410",
+    "rightBtnTxt": "Existing Inventory",
+    "leftBtnTxt": "Custom Order"
+  },
+  {
+    "id": 6,
     "title": "Accessories",
     "image": "accessories.jpg",
     "range": "410",

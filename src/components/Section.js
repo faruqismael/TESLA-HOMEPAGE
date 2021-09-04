@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import {
   Button,
   Buttons,
@@ -11,7 +10,11 @@ import {
 
 function Section({ car }) {
   return (
-    <Wrap id={car.id} bgImg={car.image}>
+    <Wrap
+      onClick={(e) => console.log(e)}
+      id={car.title.split(" ").join("")}
+      bgImg={car.image}
+    >
       <ItemText>
         <h1>{car.title}</h1>
         <p>{car.description}</p>
@@ -26,6 +29,7 @@ function Section({ car }) {
             </Button>
           )}
         </Buttons>
+
         <DownArrow src="/images/down-arrow.svg" />
       </ButtonGroup>
     </Wrap>

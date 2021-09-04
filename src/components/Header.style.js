@@ -25,21 +25,24 @@ export const Menu = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-weight: 600;
+  font-size: 20px;
 
-  & h3 {
+  & p {
     margin: 0 10px;
     text-transform: uppercase;
+
+    @media (max-width: 900px) {
+      font-size: 10px;
+    }
   }
   & * {
     cursor: pointer;
   }
-  @media (max-width: 900px) {
-    font-size: 10px;
-  }
 `;
 
 export const CenterMenu = styled(Menu)`
-  @media (max-width: 900px) {
+  @media (max-width: 1150px) {
     display: none;
   }
 `;

@@ -2,13 +2,16 @@ import React from "react";
 import styled from "styled-components";
 import Section from "./Section";
 
-import cars from "../carInfo.json";
+import { selectCars } from "../features/car/carSlice";
+import { useSelector } from "react-redux";
 
 function Home() {
+  const cars = useSelector(selectCars);
+
   return (
     <Container>
       {cars.map((car) => (
-        <Section car={car} />
+        <Section key={car.id} car={car} />
       ))}
     </Container>
   );
