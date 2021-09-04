@@ -35,11 +35,11 @@ export const Button = styled.button`
   border-radius: 100px;
   margin: 5px 20px;
   border: none;
-  opacity: 0.85;
   text-transform: uppercase;
   font-size: 12px;
   cursor: pointer;
   font-weight: 600;
+  opacity: 0.85;
 
   &:hover {
     opacity: 0.7;
@@ -50,5 +50,5 @@ export const DownArrow = styled.img`
   height: 40px;
   width: 100%;
   overflow-x: hidden;
-  animation: bounce infinite 1.5s ease-in-out;
+  animation: bounce infinite 1.5s;
 `;

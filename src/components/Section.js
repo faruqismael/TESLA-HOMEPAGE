@@ -11,7 +11,7 @@ import {
 
 function Section({ car }) {
   return (
-    <Wrap bgImg={car.image}>
+    <Wrap id={car.id} bgImg={car.image}>
       <ItemText>
         <h1>{car.title}</h1>
         <p>{car.description}</p>
