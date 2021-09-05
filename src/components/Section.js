@@ -12,7 +12,7 @@ import Fade from "react-reveal/Fade";
 function Section({ car }) {
   return (
     <Wrap
-      onClick={(e) => console.log(e)}
+      className={`car${car.id}`}
       id={car.title.split(" ").join("")}
       bgImg={car.image}
     >

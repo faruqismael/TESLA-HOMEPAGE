@@ -20,6 +20,9 @@ export const ItemText = styled.div`
 export const Buttons = styled.div`
   display: "flex";
   margin-bottom: 1vh;
+  @media (max-width: 734) {
+    display: grid;
+  }
 `;
 
 export const ButtonGroup = styled.div`
@@ -36,13 +39,18 @@ export const Button = styled.button`
   margin: 5px 20px;
   border: none;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 14px;
   cursor: pointer;
   font-weight: 600;
   opacity: 0.85;
 
   &:hover {
     opacity: 0.7;
+  }
+
+  @media (max-width: 700px) {
+    padding-top: 20px !important;
+    padding-bottom: 30px;
   }
 `;
 
