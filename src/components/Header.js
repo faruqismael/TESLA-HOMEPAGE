@@ -10,6 +10,7 @@ import {
 } from "./Header.style";
 import { selectCarModels, selectCars } from "../features/car/carSlice";
 import { useSelector } from "react-redux";
+import RubberBand from "react-reveal/RubberBand";
 
 function Header() {
   const [dropDown, setDropDown] = useState(false);
@@ -19,7 +20,9 @@ function Header() {
   return (
     <Container>
       <a href="/">
-        <Img src="/images/logo.svg" />
+        <RubberBand>
+          <Img src="/images/logo.svg" />
+        </RubberBand>
       </a>
       <CenterMenu>
         {cars.slice(0, cars.length - 1).map((car, i) => (
